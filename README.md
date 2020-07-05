@@ -1,3 +1,20 @@
+## This is an app idea I have, and starting on teh 4th of July, I'm going to devote most of my coding time to creating it
+
+### The Garden Planner
+This app will allow a user to design a garden plan based on plant spacing and garden dimensions.
+Eventual features will include:
+- Garden Mixes (default gardens to give a gardener a plan)
+- Value calculator (ability to compare local produce prices with expected yield of garden)
+- Gardening Blog(?)
+
+
+I will keep and update a daily journal of my brainstorming, successes, failures, and progress in the JOURNAL.MD file
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
