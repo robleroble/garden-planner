@@ -1,0 +1,22 @@
+#home {
+    display: flex;
+    margin-top: 30px;
+}
+
+#plant-icon {
+    border: solid;
+}
+
+#home-text {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 48px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: lawngreen;
+    color: white;
+    font-size: 20px;    
+}
