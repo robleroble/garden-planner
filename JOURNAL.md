@@ -21,3 +21,15 @@
 - got stuck on styling, but have an ugly home page
 - got it to github!
 
+---
+
+**7-5-2020**
+
+####Goals for today:
+- Make a navbar
+- If time, work on homepage theme colors, SVG icon/logo
+
+#### Accomplished:
+- Made he navbar
+- Started watching some videos on SVG icons
+

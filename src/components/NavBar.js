@@ -1,15 +1,26 @@
-import React from 'react'
-import {Navbar, NavbarBrand, Nav, NavItem} from 'reactstrap'
-import "../stylings/NavBar.css"
+import React from 'react';
+import '../stylings/NavBar.css';
 
 const NavBar = () => {
-    return (
-        <div id="nav-bar">
-            <Navbar>
-                <NavbarBrand href="#">Garden Planner</NavbarBrand>
-            </Navbar>
-        </div>
-    )
+	return (
+		<div id="nav-bar">
+			<nav>
+				<ul>
+					<li id="navbar-title">
+						<a href="#">Garden Planner</a>
+					</li>
+					<div id="nav-items">
+						<li className="navbar-item">
+							<a href="#">About</a>
+						</li>
+						<li className="navbar-item">
+							<a href="#">Login</a>
+						</li>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	);
 };
 
 export default NavBar;
