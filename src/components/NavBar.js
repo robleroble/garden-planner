@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../stylings/NavBar.css';
 
 const NavBar = () => {
@@ -7,7 +8,7 @@ const NavBar = () => {
 			<nav>
 				<ul>
 					<li id="navbar-title">
-						<a href="#">Garden Planner</a>
+						<NavLink to="/">Garden Planner</NavLink>
 					</li>
 					<div id="nav-items">
 						<li className="navbar-item">

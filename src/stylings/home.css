@@ -1,22 +1,36 @@
-#home {
-    display: flex;
-    margin-top: 30px;
+#home-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: inherit;
+}
+
+#logo-btns {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #plant-icon {
-    border: solid;
 }
 
-#home-text {
-    display: flex;
-    flex-direction: column;
+#home-btns {
+	height: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 button {
-    height: 48px;
-    width: 270px;
-    border-radius: 10px;
-    background-color: lawngreen;
-    color: white;
-    font-size: 20px;    
+	height: 48px;
+	width: 270px;
+	border-radius: 10px;
+	border-color: navy;
+	background-color: #b8f457;
+	font-size: 20px;
+}
+
+p {
+	text-align: center;
 }

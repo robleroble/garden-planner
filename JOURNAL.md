@@ -25,11 +25,27 @@
 
 **7-5-2020**
 
-####Goals for today:
+#### Goals for today:
 - Make a navbar
 - If time, work on homepage theme colors, SVG icon/logo
 
 #### Accomplished:
-- Made he navbar
+- Made the navbar
 - Started watching some videos on SVG icons
 
+**7-6-2020**
+
+#### Goals for today:
+- Watch SVG videos
+- Create a logo with svg
+- Finish home page
+
+#### Accomplished:
+- Nothing
+
+**7-7-2020**
+
+#### Goals for today:
+-Finish 'basic' homepage (no svg yet)
+-Learn about SVG paths
+-Start building garden designer page (forms, structure)

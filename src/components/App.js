@@ -1,7 +1,7 @@
 import React from 'react';
-import Routes from "./Routes"
-import NavBar from "./NavBar"
-import "../stylings/App.css"
+import Routes from './Routes';
+import NavBar from './NavBar';
+import '../stylings/App.css';
 
 function App() {
 	return (

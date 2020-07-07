@@ -1,22 +1,27 @@
-import React from "react"
-import '../stylings/home.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../stylings/home.css';
 
 const Home = () => {
-    return (
-    <>
-    <h2>Design your own garden. Eat healthier. Save money.</h2>
-    <div id="home">
-        <div id="plant-icon">
-            <h1>Plant Logo</h1>
-            <h1>Goes Here</h1>
-        </div>
-        <div id="home-text">
-            <button>Get Started</button>
-            <button>Log in</button>
-        </div>
-    </div>
-    </>
-    )
-}
+	return (
+		<div id="home-content">
+			<h2>Design your own garden. Eat healthier. Save money.</h2>
+			<div id="logo-btns">
+				<div id="plant-icon">
+					<svg width="260" height="260">
+						<circle r="125" cx="130" cy="130" fill="white" stroke="darkgreen" stroke-width="5px" />
+					</svg>
+				</div>
+				<div id="home-btns">
+					<button>Get Registered</button>
+					<p>OR</p>
+					<Link to="/plan">
+						<button>Make Some Gardens!</button>
+					</Link>
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export default Home;
