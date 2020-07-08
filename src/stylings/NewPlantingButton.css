@@ -1,0 +1,15 @@
+.new-planting-btn {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 150px;
+	height: 35px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.new-planting-btn-text {
+	/* margin: 0;
+	text-align: left; */
+}

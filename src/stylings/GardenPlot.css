@@ -1,0 +1,8 @@
+.garden-plot {
+	min-width: 300px;
+	min-height: 300px;
+	border: solid;
+	border-color: #512915;
+	border-width: 5px;
+	background-color: sienna;
+}

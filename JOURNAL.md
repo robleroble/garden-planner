@@ -48,4 +48,17 @@
 #### Goals for today:
 -Finish 'basic' homepage (no svg yet)
 -Learn about SVG paths
--Start building garden designer page (forms, structure)
+-Start building garden designer page 
+-- Garden with dimensions and ability to change dimensions
+
+#### Accomplished:
+- more or less finished the home page
+- made a first version of the garden builder w/form and buttons (no functionality)
+
+**I am going to scrap my current garden builder and go with a grid-pattern. I need to figure out how to make a grid without a nasty component*
+
+**7-8-2020**
+
+#### Goals for today:
+- create garden builder that is a grid system
+- create buttons that extend the garden grids one tile to the bottom or one tile to the right

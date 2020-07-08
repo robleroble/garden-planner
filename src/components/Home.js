@@ -12,11 +12,11 @@ const Home = () => {
 						<circle r="125" cx="130" cy="130" fill="white" stroke="darkgreen" stroke-width="5px" />
 					</svg>
 				</div>
-				<div id="home-btns">
-					<button>Get Registered</button>
+				<div id="home-btn-container">
+					<button className="home-btn">Get Registered</button>
 					<p>OR</p>
 					<Link to="/plan">
-						<button>Make Some Gardens!</button>
+						<button className="home-btn">Make Some Gardens!</button>
 					</Link>
 				</div>
 			</div>

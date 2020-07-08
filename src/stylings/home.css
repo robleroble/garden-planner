@@ -15,14 +15,14 @@
 #plant-icon {
 }
 
-#home-btns {
+#home-btn-container {
 	height: 160px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 }
 
-button {
+.home-btn {
 	height: 48px;
 	width: 270px;
 	border-radius: 10px;
