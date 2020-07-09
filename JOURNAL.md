@@ -62,3 +62,16 @@
 #### Goals for today:
 - create garden builder that is a grid system
 - create buttons that extend the garden grids one tile to the bottom or one tile to the right
+
+#### Accomplished:
+- made my grid system (should RM borders and make them inlaid to the div so they are 50px divs instead of 52px)
+- added state and buttons that let you add rows and columns to garden
+- Made a little shovel cursor when hovering over the grid
+
+**7-9-2020**
+
+#### Goals for today:
+- add dimensions thingy for the grid
+- fix grid borders (and fix other styling once changed... ugh)
+- figure out how to store a crop in state in the grid
+- play with react-selectable

@@ -1,8 +1,47 @@
-.garden-plot {
-	min-width: 300px;
-	min-height: 300px;
+#garden-holder {
 	border: solid;
 	border-color: #512915;
-	border-width: 5px;
+	border-width: 10px;
 	background-color: sienna;
+	display: inline-block;
+	cursor: url('../icons/shovel.svg') 4 28, auto;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.plot {
+	width: 50px;
+	height: 50px;
+	border: solid;
+	border-color: tan;
+	border-width: 0.5px;
+}
+
+#new-col-btn {
+	display: inline-block;
+	background-color: white;
+	width: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#new-col-text {
+	transform: rotate(90deg);
+	text-align: center;
+	margin: 0;
+	white-space: nowrap;
+}
+
+#horiz-flex {
+	display: flex;
+}
+
+#vert-flex {
+	margin-left: 22px;
 }
