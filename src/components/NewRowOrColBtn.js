@@ -13,7 +13,7 @@ const NewRowOrColBtn = ({ direction, addColumn, addRow }) => {
 	const newColumnBtn = (
 		<div className="col-btn" onClick={() => addColumn()}>
 			<FaPlus className="plus-icon-col" />
-			<h3 id="col-btn-text">Add Column</h3>
+			<h3 id="col-btn-text">Add</h3>
 		</div>
 	);
 

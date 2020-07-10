@@ -1,0 +1,8 @@
+.garden-cell {
+	width: 48px;
+	height: 48px;
+	border: solid;
+	border: none;
+	box-shadow: 0 0 2px inset tan;
+	cursor: url('../icons/shovel.svg') 4 28, auto;
+}

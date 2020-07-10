@@ -1,0 +1,25 @@
+{
+    "dimensions": {
+        "rows": 2,
+        "columns": 2
+    },
+
+    "garden-layout": [
+        {
+            "coords": "1-1",
+            "crop": "none"
+        },
+        {
+            "coords": "1-2",
+            "crop": "none"
+        },
+        {
+            "coords": "2-1",
+            "crop": "none"
+        },
+        {
+            "coords": "2-2",
+            "crop": "none"
+        },
+    ]
+}

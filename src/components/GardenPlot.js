@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import NewPlantingButton from './NewPlantingButton';
 import '../stylings/GardenPlot.css';
 import NewRowOrColBtn from './NewRowOrColBtn';
+import Dimensions from './Dimensions';
+import GardenCell from './GardenCell';
 
 // Make a div with a grid of divs based on length and width
 const GardenPlot = () => {
@@ -12,7 +13,6 @@ const GardenPlot = () => {
 	const [ gardenDimensions, setGardenDimensions ] = useState(INITIAL_DIMENSIONS);
 
 	function addColumn() {
-		console.log('click');
 		setGardenDimensions((gardenDimensions) => ({
 			...gardenDimensions,
 			columns: gardenDimensions.columns + 1
@@ -21,7 +21,6 @@ const GardenPlot = () => {
 	}
 
 	function addRow() {
-		console.log('click');
 		setGardenDimensions((gardenDimensions) => ({
 			...gardenDimensions,
 			rows: gardenDimensions.rows + 1
@@ -29,14 +28,21 @@ const GardenPlot = () => {
 		console.log(gardenDimensions);
 	}
 
+	function setColumns(value) {
+		setGardenDimensions((gardenDimensions) => ({
+			...gardenDimensions,
+			columns: value
+		}));
+	}
+
 	return (
-		<div id="vert-flex">
+		<div>
+			<Dimensions direction="row" value={gardenDimensions.columns} />
 			<div id="horiz-flex">
+				<Dimensions direction="column" value={gardenDimensions.rows} />
 				<div id="garden-holder">
 					{[ ...Array(gardenDimensions.rows) ].map((x, i) => (
-						<div className="row">
-							{[ ...Array(gardenDimensions.columns) ].map((y, idx) => <div className="plot" />)}
-						</div>
+						<div key={gardenDimensions.rows-i} className="row">{[ ...Array(gardenDimensions.columns) ].map((y, idx) => <GardenCell id={`${idx+1}-${gardenDimensions.rows-i}`} key={`${idx+1}-${gardenDimensions.rows-i}`} />)}</div>
 					))}
 				</div>
 				<NewRowOrColBtn direction="column" addColumn={addColumn} />
