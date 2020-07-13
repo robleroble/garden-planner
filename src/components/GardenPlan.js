@@ -6,13 +6,12 @@ import GardenFooter from "./GardenFooter"
 
 const GardenPlan = () => {
 	return (
-		<div>
-		<h1 style={{ textAlign: 'center' }}>Garden Plan</h1>
-		<div>
-			
+		<div id="app-theme">
+			<h1 style={{ textAlign: 'center' }}>Garden Plan</h1>
 			<GardenPlot />
-			
-		</div>
+			<div id="footer">
+			<GardenFooter />
+			</div>
 		</div>
 	);
 };

@@ -90,3 +90,13 @@
 - fix footer styling so it doesn't interfere with the plot
 - incorporate redux and reducers to alter state
 - add actions, action-types
+
+#### Accomplished:
+- made buttons footer thingy
+- redux set up
+- fixed the old footer styling
+
+**7-13-2020**
+
+#### Goals for today:
+- add a minus row button
