@@ -1,28 +1,63 @@
 .row-btn {
-	height: 50px;
-	width: calc(100% - 108px);
+	height: 48px;
+	width: calc(100% - 104px);
 	margin-left: 55px;
-	opacity: 0.7;
-	background-color: #eaf7f8;
-	border-radius: 0px 0px 10px 10px;
-	border: solid;
-	border-top: none;
-	border-width: 1px;
-	border-color: #d7e2f2;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 }
 
-.row-btn:hover {
+.plus-row {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	opacity: 0.7;
+	background-color: #eaf7f8;
+	border-radius: 0px 0px 0px 10px;
+	border: solid;
+	border-top: none;
+	border-right: none;
+	border-width: 1px;
+	border-color: #d7e2f2;
+}
+
+.plus-row svg {
+	margin: auto;
+	padding: auto;
+}
+
+.plus-row:hover {
 	opacity: 1;
 }
 
-.col-btn {
-	width: 50px;
-	background-color: #eaf7f8;
-	border: solid;
+.minus-row {
+	height: 100%;
+	width: 50%;
+	display: flex;
 	opacity: 0.7;
+	background-color: red;
+	border-radius: 0px 0px 10px 0px;
+	border: solid;
+	border-left: none;
+	border-top: none;
+	border-width: 1px;
+	border-color: darkred;
+}
+
+.minus-row:hover {
+	opacity: 1;
+}
+
+.minus-row svg {
+	margin: auto;
+	padding: auto;
+}
+
+/* */
+
+.col-btn {
+	width: 48px;
+	border: solid;
 	border-left: none;
 	border-radius: 0px 10px 10px 0px;
 	border-width: 1px;
@@ -33,13 +68,50 @@
 	align-items: center;
 }
 
-.col-btn:hover {
+.plus-col {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	opacity: 0.7;
+	background-color: #eaf7f8;
+	border-radius: 0px 10px 0px 0px;
+	border: solid;
+	border-left: none;
+	border-botton: none;
+	border-width: 1px;
+	border-color: #d7e2f2;
+}
+
+.plus-col svg {
+	margin: auto;
+	padding: auto;
+}
+
+.plus-col:hover {
 	opacity: 1;
 }
 
-#col-btn-text {
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
+.minus-col {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	opacity: 0.7;
+	background-color: red;
+	border-radius: 0px 0px 10px 0px;
+	border: solid;
+	border-left: none;
+	border-top: none;
+	border-width: 1px;
+	border-color: darkred;
+}
+
+.minus-col:hover {
+	opacity: 1;
+}
+
+.minus-col svg {
+	margin: auto;
+	padding: auto;
 }
 
 .plus-icon-col {
@@ -54,4 +126,11 @@
 	margin-right: 20px;
 	width: 30px;
 	height: 30px;
+}
+
+#new-row-icon {
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	margin-left: 55px;
 }
