@@ -75,3 +75,18 @@
 - fix grid borders (and fix other styling once changed... ugh)
 - figure out how to store a crop in state in the grid
 - play with react-selectable
+
+#### Accomplished:
+- added dimensions to grid
+- set up IDs and keys corresponding to grid coordinates
+- changed grid borders to be inlaid
+
+**Not sure how I want to proceed with being able to select grid points. I'm struggling with figuring that out with react-selectable*
+
+**7-12-2020**
+
+#### Goals for today:
+- create footer with buttons to: change dimensions, units/grid-pattern
+- fix footer styling so it doesn't interfere with the plot
+- incorporate redux and reducers to alter state
+- add actions, action-types

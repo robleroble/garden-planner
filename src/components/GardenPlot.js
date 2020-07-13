@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useSelector, useDispatch} from 'react-redux'
 import '../stylings/GardenPlot.css';
 import NewRowOrColBtn from './NewRowOrColBtn';
 import Dimensions from './Dimensions';
@@ -6,34 +7,23 @@ import GardenCell from './GardenCell';
 
 // Make a div with a grid of divs based on length and width
 const GardenPlot = () => {
-	const INITIAL_DIMENSIONS = {
-		columns: 4,
-		rows: 3
-	};
-	const [ gardenDimensions, setGardenDimensions ] = useState(INITIAL_DIMENSIONS);
+	const gardenDimensions = useSelector((store) => store.dimensions)
+	const dispatch = useDispatch();
 
 	function addColumn() {
-		setGardenDimensions((gardenDimensions) => ({
-			...gardenDimensions,
-			columns: gardenDimensions.columns + 1
-		}));
-		console.log(gardenDimensions);
+		dispatch({type: 'ADD_COLUMN'})
 	}
 
 	function addRow() {
-		setGardenDimensions((gardenDimensions) => ({
-			...gardenDimensions,
-			rows: gardenDimensions.rows + 1
-		}));
-		console.log(gardenDimensions);
+		dispatch({type: 'ADD_ROW'})
 	}
 
-	function setColumns(value) {
-		setGardenDimensions((gardenDimensions) => ({
-			...gardenDimensions,
-			columns: value
-		}));
-	}
+	// function setColumns(value) {
+	// 	setGardenDimensions((gardenDimensions) => ({
+	// 		...gardenDimensions,
+	// 		columns: value
+	// 	}));
+	// }
 
 	return (
 		<div>
@@ -53,10 +43,3 @@ const GardenPlot = () => {
 };
 
 export default GardenPlot;
-
-// return (
-// 	<div>
-// 		<div className="garden-plot" />
-// 		<NewPlantingButton />
-// 	</div>
-// );
