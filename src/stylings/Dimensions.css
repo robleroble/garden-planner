@@ -1,16 +1,16 @@
 .row-dimensions {
 	margin-bottom: 5px;
-	height: 50px;
+	height: 48px;
 	width: 100%;
 	margin-left: 55px;
-	width: calc(100% - 106px);
+	width: calc(100% - 104px);
 	display: flex;
 	align-items: center;
 }
 
 .row-end-point {
 	width: 10px;
-	height: 50px;
+	height: 48px;
 	background-color: navy;
 }
 
@@ -33,14 +33,14 @@
 /*  */
 .column-dimensions {
 	margin-right: 5px;
-	width: 50px;
+	width: 48px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .column-end-point {
-	width: 50px;
+	width: 48px;
 	height: 10px;
 	background-color: navy;
 }

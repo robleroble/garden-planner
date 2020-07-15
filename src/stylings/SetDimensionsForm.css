@@ -1,0 +1,55 @@
+.set-dimensions-form {
+    background-color: white;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.close-icon {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4 {
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+.form-input {
+    height: 24px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+#spacing {
+    width: 40px;
+}
+
+#crop {
+    width: 120px;
+}
+
+.submit-btn {
+    margin-top: 5px;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}

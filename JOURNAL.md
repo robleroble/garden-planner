@@ -100,3 +100,15 @@
 
 #### Goals for today:
 - add a minus row button
+
+#### Accomplished: 
+- added the minus button
+
+*Too tired after work to focus much. I need to get a better understanding of actions before I use them. For now, I'll focus on setting up the dimensions button, and after that, I should probably start trying to figure out how to click and select grids.*
+
+****
+
+**7-13-2020**
+
+#### Goals for today:
+- Create a form for the set dimensions button

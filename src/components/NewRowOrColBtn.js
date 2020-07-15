@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import { AiOutlineInsertRowRight, AiOutlineInsertRowBelow } from 'react-icons/ai';
+// import { AiOutlineInsertRowRight, AiOutlineInsertRowBelow } from 'react-icons/ai';
 import '../stylings/NewRowOrColBtn.css';
 
 const NewRowOrColBtn = ({ direction, addColumn, minusColumn, addRow, minusRow }) => {

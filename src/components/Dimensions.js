@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../stylings/Dimensions.css';
 
 const Dimensions = ({ direction, value, setColumns }) => {
