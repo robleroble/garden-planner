@@ -108,7 +108,21 @@
 
 ****
 
-**7-13-2020**
+**7-14-2020**
 
 #### Goals for today:
 - Create a form for the set dimensions button
+
+#### Accomplished:
+- made the basic form for the dimensions
+
+**7-15-2020**
+
+#### Goals for today:
+- create reducer func to set the dimensions
+- hook it up to the form
+- play around with storing grid cells in state
+
+#### Accomplished:
+- created SET_DIMENSIONS reducer func
+- have it set up in the SetDimensionsForm

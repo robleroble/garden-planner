@@ -26,20 +26,15 @@ const GardenPlot = () => {
 		dispatch({ type: 'MINUS_ROW' });
 	}
 
-	// function setColumns(value) {
-	// 	setGardenDimensions((gardenDimensions) => ({
-	// 		...gardenDimensions,
-	// 		columns: value
-	// 	}));
-	// }
-
+	const grid = useSelector((store) => store.grid);
 	return (
 		<div>
 			<Dimensions direction="row" value={gardenDimensions.columns} />
 			<div id="horiz-flex">
 				<Dimensions direction="column" value={gardenDimensions.rows} />
 				<div id="garden-holder">
-					{[ ...Array(gardenDimensions.rows) ].map((x, i) => (
+					{/* Original plot setup with just the dimensions from redux */}
+					{/* {[ ...Array(gardenDimensions.rows) ].map((x, i) => (
 						<div key={gardenDimensions.rows - i} className="row">
 							{[ ...Array(gardenDimensions.columns) ].map((y, idx) => (
 								<GardenCell
@@ -48,7 +43,10 @@ const GardenPlot = () => {
 								/>
 							))}
 						</div>
-					))}
+					))} */}
+
+					{/* Attempt to build the grid with my new grid setup */}
+					{grid.map((row, idx) => <div className="row">{row.map((cell, index) => <GardenCell text={cell} />)}</div>)}
 				</div>
 				<NewRowOrColBtn direction="column" addColumn={addColumn} minusColumn={minusColumn} />
 			</div>
