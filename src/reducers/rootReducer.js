@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
 	dimensions: {
-		rows: 3,
+		rows: 4,
 		columns: 4
 	},
 	grid: [
@@ -17,15 +17,26 @@ const rootReducer = (state = INITIAL_STATE, action) => {
 			console.log(state.grid);
 			return {
 				...state,
-				dimensions: { ...state.dimensions, columns: state.dimensions.columns + 1 },
-				grid: [ ...state.grid, { crop: 'empty' } ]
+				dimensions: { ...state.dimensions, columns: state.dimensions.columns + 1 }
+				// grid: [ ...state.grid, state.grid.map((row) => row) ]
 			};
 		case 'MINUS_COLUMN':
 			return { ...state, dimensions: { ...state.dimensions, columns: state.dimensions.columns - 1 } };
 		case 'ADD_ROW':
-			return { ...state, dimensions: { ...state.dimensions, rows: state.dimensions.rows + 1 } };
+			const row_length = state.grid[0].length;
+			const new_row = new Array(row_length).fill({ crop: 'empty' });
+			return {
+				...state,
+				dimensions: { ...state.dimensions, rows: state.dimensions.rows + 1 },
+				grid: [ ...state.grid, (state.grid[state.dimensions.rows] = new_row) ]
+			};
 		case 'MINUS_ROW':
-			return { ...state, dimensions: { ...state.dimensions, rows: state.dimensions.rows - 1 } };
+			let former_rows = [ ...state.grid.pop() ];
+			return {
+				...state,
+				dimensions: { ...state.dimensions, rows: state.dimensions.rows - 1 },
+				grid: [ ...state.grid ]
+			};
 		case 'SET_DIMENSIONS':
 			return { ...state, dimensions: { ...state.dimensions, rows: action.rowsValue, columns: action.columnsValue } };
 		default:

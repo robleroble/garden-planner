@@ -126,3 +126,8 @@
 #### Accomplished:
 - created SET_DIMENSIONS reducer func
 - have it set up in the SetDimensionsForm
+
+**7-16-2020**
+
+#### Goals for today:
+- 
