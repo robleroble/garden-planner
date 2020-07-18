@@ -130,4 +130,25 @@
 **7-16-2020**
 
 #### Goals for today:
-- 
+- created nested array storage to contain garden cells
+- started making reducer funcs for the add col and row buttons
+
+#### Accomplished:
+- See the goals
+
+*I'm going to have to work a lot with pure funcs. I'm still unsure how I'll be able to store and edit individial cell values. Filter?*
+
+**7-17-2020**
+
+#### Goals for today:
+- Work on the reducer funcs
+
+#### Accomplished:
+- updated all of the reducer funcs.
+
+*I'll need to update the set_dimensions reducer func in order for it to not edit the state of the other cells when they eventually have different crop values*
+
+**7-18-2020**
+
+#### Goals for today:
+- play around with the idea of selecting cells (some form of state that adds cells based on key when they've been clicked?)
