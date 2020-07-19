@@ -152,3 +152,14 @@
 
 #### Goals for today:
 - play around with the idea of selecting cells (some form of state that adds cells based on key when they've been clicked?)
+
+#### Accomplished:
+- used state to toggle className variable
+
+**7-19-2020**
+
+#### Goals for today:
+- Transfer useState from gardencell to the reducer
+
+*reducer func will take the index position of the cell in the grid, as well as a crop name*
+*maybe store the selected tiles in a temporary state?*

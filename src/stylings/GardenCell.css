@@ -6,3 +6,8 @@
 	box-shadow: 0 0 2px inset tan;
 	cursor: url('../icons/shovel.svg') 4 28, auto;
 }
+
+.tomato {
+	background-color: tomato;
+	box-shadow: 0 0 2px inset darkred;
+}

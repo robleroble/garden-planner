@@ -4,7 +4,7 @@ const INITIAL_STATE = {
 		columns: 4
 	},
 	grid: [
-		[ { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' } ],
+		[ { crop: 'empty' }, { crop: 'tomato' }, { crop: 'empty' }, { crop: 'empty' } ],
 		[ { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' } ],
 		[ { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' } ],
 		[ { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' }, { crop: 'empty' } ]

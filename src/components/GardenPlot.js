@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import '../stylings/GardenPlot.css';
 import NewRowOrColBtn from './NewRowOrColBtn';
@@ -27,26 +27,25 @@ const GardenPlot = () => {
 	}
 
 	const grid = useSelector((store) => store.grid);
+
 	return (
 		<div>
 			<Dimensions direction="row" value={gardenDimensions.columns} />
 			<div id="horiz-flex">
 				<Dimensions direction="column" value={gardenDimensions.rows} />
 				<div id="garden-holder">
-					{/* Original plot setup with just the dimensions from redux */}
-					{/* {[ ...Array(gardenDimensions.rows) ].map((x, i) => (
-						<div key={gardenDimensions.rows - i} className="row">
-							{[ ...Array(gardenDimensions.columns) ].map((y, idx) => (
+					{/* Attempt to build the grid with my new grid setup */}
+					{grid.map((row, idx) => (
+						<div className="row">
+							{row.map((cell, index) => (
 								<GardenCell
-									id={`${idx + 1}-${gardenDimensions.rows - i}`}
-									key={`${idx + 1}-${gardenDimensions.rows - i}`}
+									crop={cell.crop}
+									id={`${index + 1}-${gardenDimensions.rows - idx}`}
+									key={`${index + 1}-${gardenDimensions.rows - idx}`}
 								/>
 							))}
 						</div>
-					))} */}
-
-					{/* Attempt to build the grid with my new grid setup */}
-					{grid.map((row, idx) => <div className="row">{row.map((cell, index) => <GardenCell text={cell} />)}</div>)}
+					))}
 				</div>
 				<NewRowOrColBtn direction="column" addColumn={addColumn} minusColumn={minusColumn} />
 			</div>
