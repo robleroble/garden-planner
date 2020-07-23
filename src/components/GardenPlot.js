@@ -36,13 +36,9 @@ const GardenPlot = () => {
 				<div id="garden-holder">
 					{/* Attempt to build the grid with my new grid setup */}
 					{grid.map((row, idx) => (
-						<div className="row">
+						<div className="row" key={`row-${idx}`}>
 							{row.map((cell, index) => (
-								<GardenCell
-									crop={cell.crop}
-									id={`${index + 1}-${gardenDimensions.rows - idx}`}
-									key={`${index + 1}-${gardenDimensions.rows - idx}`}
-								/>
+								<GardenCell row={`${idx}`} col={`${index}`} key={`${index + 1}-${gardenDimensions.rows - idx}`} />
 							))}
 						</div>
 					))}

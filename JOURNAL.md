@@ -156,7 +156,7 @@
 #### Accomplished:
 - used state to toggle className variable
 
-**7-19-2020**
+**7-22-2020**
 
 #### Goals for today:
 - Transfer useState from gardencell to the reducer
