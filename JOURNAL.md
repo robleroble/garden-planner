@@ -163,3 +163,17 @@
 
 *reducer func will take the index position of the cell in the grid, as well as a crop name*
 *maybe store the selected tiles in a temporary state?*
+
+**7-23-2020**
+
+#### Goals for today:
+- make form that lets you create a crop and gives it a color
+
+#### Accomplished:
+- got started on structure for sidebar to add new colors
+
+**7-24-2020**
+
+#### Goals for today:
+- finish sidebar
+- change sidebar to include both a form to make a new crop and store list of crops
