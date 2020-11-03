@@ -5,16 +5,15 @@ import GardenPlot from './GardenPlot';
 import GardenFooter from './GardenFooter';
 import GardenCropSelector from './NewCropForm';
 import GardenColors from './GardenColors';
-import GardenCropBtn from './GardenCropBtn';
+import GardenCropsList from './GardenCropsList';
 
 const GardenPlan = () => {
 	return (
 		<div id="app-theme">
 			<h1 style={{ textAlign: 'center' }}>Garden Plan</h1>
 			<div id="garden-plus-colors">
-				<GardenCropBtn />
+				<GardenCropsList />
 				<GardenPlot />
-				<GardenCropBtn />
 			</div>
 			<div id="footer">
 				<GardenFooter />

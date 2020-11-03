@@ -32,7 +32,6 @@ const rootReducer = (state = INITIAL_STATE, action) => {
 			const filled_row = new_row.map((cell) => ({
 				crop: 'empty'
 			}));
-			console.log(filled_row);
 
 			// This version added new rows but when I clicked on a cell, the entire row turned to tomatoes...
 			// const new_row = new Array(row_length).fill({ crop: 'empty' });

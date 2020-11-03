@@ -1,0 +1,37 @@
+#crop-list {
+    width: 100%;
+    margin-top: 53px;
+    margin-bottom: 50px;
+    margin-right: 24px;
+    height: calc(100%-100px);
+    background-color: #eaf7f8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-width: 1px;
+    border: solid;
+    border-color: #97baf0;
+}
+
+#title-and-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#open-color-form {
+    border-radius: 0px 0px 10px 10px;
+    border-top: solid;
+    border-color: #97baf0;
+    border-width: 0.5px;
+    cursor: pointer;
+}
+
+#title {
+}
+
+h3 {
+    margin: 0px;
+}

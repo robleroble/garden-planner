@@ -177,3 +177,15 @@
 #### Goals for today:
 - finish sidebar
 - change sidebar to include both a form to make a new crop and store list of crops
+
+**11-2-2020**
+
+I've come back after more than 3 months. I'm going to start spenging an hour or so every day working on this project again.
+
+#### Goals for today:
+- refresh myself on what's what
+- work on the new color form
+
+For tomorrow: add crop list to state and list crops in the crops tab
+Then: Work out a func for the form to add crops to the list
+Then: Ability to highlight crop that lets you change crop of garden (clicking off garden removes ability)
