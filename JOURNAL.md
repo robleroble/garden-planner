@@ -189,3 +189,11 @@ I've come back after more than 3 months. I'm going to start spenging an hour or 
 For tomorrow: add crop list to state and list crops in the crops tab
 Then: Work out a func for the form to add crops to the list
 Then: Ability to highlight crop that lets you change crop of garden (clicking off garden removes ability)
+
+**7-11-2021**
+
+Back again, hopefully for good now. Just want to get a few ideas out on paper right now for what I want to work on.
+
+1. Create a basic MERN app setup (Mongo, Express, React, Node) == I need to figure out how these are set up.
+2. Think up a better system for putting actual crops in the ground rather than just clicking cells (EG: diff crops will take up diff spaces)
+3. Create way to create new crops with custom spacings
