@@ -12,7 +12,7 @@ const GardenPlan = () => {
 		<div id="app-theme">
 			<h1 style={{ textAlign: 'center' }}>Garden Plan</h1>
 			<div id="garden-plus-colors">
-				<GardenCropsList />
+				{/* <GardenCropsList /> */}
 				<GardenPlot />
 			</div>
 			<div id="footer">
